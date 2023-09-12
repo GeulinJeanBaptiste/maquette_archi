@@ -7,6 +7,9 @@
   padding: 0;
   font-family: "Segoeui", sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
 img,
 input {
   width: 100%;
@@ -139,16 +142,18 @@ button {
   .Card {
     width: 48%;
   }
+  header ul {
+    display: flex;
+    position: static;
+  }
+  #burger{
+    display: none;
+  }
 }
 @media screen and (min-width: 1024px) {
   #gallery div,
   .Card {
     width: 24%;
   }
-  #burger{
-    display: none;
-  }
-  header ul {
-    display: flex;
-    position: static;
-  }
+
+}

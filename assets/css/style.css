@@ -1,0 +1,154 @@
+@font-face {
+  font-family: "Segoeui";
+  src: url(../font/SEGOEUI.TTF);
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoeui", sans-serif;
+}
+img,
+input {
+  width: 100%;
+}
+#Logo {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+#Logoheader {
+  margin: 16px;
+}
+#Spanh2archi {
+  font-weight: normal;
+}
+ul {
+  display: none;
+  list-style-type: none;
+  position: absolute;
+  top: 3rem;
+  background-color: rgb(255, 255, 255);
+  right: 0;
+}
+li {
+  padding: 16px;
+}
+#spanh1br {
+  background-color: rgba(19, 18, 18, 0.719);
+  color: white;
+}
+h1 {
+  background-image: url("../img/architect.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+#spanh1archi {
+  display: none;
+}
+#imgh1 {
+  display: flex;
+}
+.blue {
+  color: blue;
+}
+.ma-bars {
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border: 0.1px solid black;
+  border-radius: 0.5rem;
+}
+#check:checked ~ ul {
+  display: flex;
+}
+#check {
+  display: none;
+}
+#gallery div {
+  position: relative;
+}
+#gallery span {
+  background-color: black;
+  color: white;
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  right: 0;
+}
+#gallery img {
+  vertical-align: bottom;
+}
+#Projects{
+border-bottom: 0.5px solid grey;
+width: 95%;
+margin: auto;
+margin-top: 3rem;
+padding-bottom: 1rem;
+}
+#Cards {
+  display: flex;
+  flex-direction: column;
+}
+.Card, .contact{
+  margin-top: 1rem;
+}
+button {
+  width: 100%;
+}
+#gallery,
+#About, #contact {
+  width: 95%;
+  margin: auto;
+}
+#gallery div{
+  margin-top: 1rem;
+}
+#contact {
+  display: flex;
+  flex-direction: column;
+}
+.submit {
+  width: fit-content;
+  background-color: black;
+  color: white;
+}
+
+@media screen and (min-width: 576px) {
+  #spanh1archi {
+    display: inline;
+  }
+  #gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #gallery div {
+    width: 48%;
+  }
+  #Cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  .Card {
+    width: 48%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #gallery div,
+  .Card {
+    width: 24%;
+  }
+  #burger{
+    display: none;
+  }
+  header ul {
+    display: flex;
+    position: static;
+  }
